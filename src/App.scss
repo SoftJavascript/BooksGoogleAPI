@@ -1,0 +1,121 @@
+html {
+  position: relative; 
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: auto
+}
+
+
+$theme-colors: (
+  "primary": #2596be,
+  "secondary": #98b5e3,
+  "black": #000000,
+  "red": #b31e14,
+  "white": #FFFFFF,
+  );
+  
+  $btn-close-color: (white);
+  
+  $spacer: 1rem;
+  $spacers: (
+    1: ($spacer * .5),
+    2: $spacer,
+    3: ($spacer * 1.5),
+    4: ($spacer * 2),
+    5: ($spacer * 3),
+    6: ($spacer * 4),
+    7: ($spacer * 5), 
+    10: ($spacer * 6)
+    );
+    
+.App {
+  text-align: center;
+}
+
+.btn-light{
+  background-color: #98B5E3 !important;
+  margin: 0rem 0.1rem 0rem 1rem;
+  color: white !important;
+  border-color: white !important;
+}
+
+.googleIcon {
+  vertical-align: bottom;
+  font-size: 2em;
+}
+
+.btn-outline-secondary:hover, .btn-outline-secondary:focus {
+  color: white !important;
+  background-color: #98B5E3 !important;
+}
+
+.btn-light:focus, .btn-light:hover {
+  color: #98B5E3 !important;
+  background-color: white !important;
+  border-color: #98B5E3 !important;
+}
+
+
+.btn-cancel, .btn-cancel:focus, .btn-cancel:visited, .btn-miniCancel:focus {
+  background-color: #b31e14 !important;
+  color: white !important;
+}
+
+.btn-cancel:hover, .btn-miniCancel:hover {
+  color: #b31e14 !important;
+  background-color: white !important;
+  border-color: #b31e14 !important;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.flex-wrapper {
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.footer {
+  position: fixed;
+  height: 70px;
+  bottom: 0;
+  width: 100%;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
